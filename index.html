@@ -20,6 +20,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTSVLQPJ3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2LTSVLQPJ3');
+</script>
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -551,6 +560,31 @@ btn.addEventListener('click',function(){
   btn.setAttribute('aria-expanded',open?'true':'false');
 });
 links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+
+// --- conversion tracking: which contact route people actually use ---
+function track(name, params){ if (typeof gtag === 'function') gtag('event', name, params || {}); }
+
+document.querySelectorAll('.contact-links a, .nav-cta, .btn').forEach(function(el){
+  el.addEventListener('click', function(){
+    var href = el.getAttribute('href') || '';
+    var label = (el.textContent || '').trim().slice(0,40);
+    if (href.indexOf('mailto:') === 0)               track('contact_email',    {method:'email', label:label});
+    else if (href.indexOf('wa.me') > -1)             track('contact_whatsapp', {method:'whatsapp', label:label});
+    else if (href.indexOf('.pdf') > -1)              track('resume_download',  {file_name:'jismy-thomas-resume.pdf'});
+    else if (href.indexOf('linkedin.com') > -1)      track('social_click',     {network:'linkedin'});
+    else if (href.indexOf('instagram.com') > -1)     track('social_click',     {network:'instagram'});
+    else if (href.charAt(0) === '#')                 track('cta_click',        {target:href, label:label});
+  });
+});
+
+document.querySelectorAll('a[href^="http"]').forEach(function(el){
+  if (el.closest('.contact-links')) return;
+  el.addEventListener('click', function(){
+    var h = el.getAttribute('href');
+    if (h.indexOf('instagram.com/reel') > -1) track('reel_click', {link_url:h});
+    else if (h.indexOf('mibyjismy.in') > -1)  track('project_click', {link_url:h});
+  });
+});
 
 var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(!reduce&&'IntersectionObserver'in window){
