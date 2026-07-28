@@ -163,9 +163,8 @@ h2{font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(1.6rem,3vw,2
 /* --- clients --- */
 .clients{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:1.4rem}
 .client{border:1px solid var(--line);background:#fff;border-radius:3px;padding:1.2rem;text-align:center}
-.wordmark{height:66px;display:grid;place-items:center;margin-bottom:.85rem;border-bottom:1px solid var(--line)}
-.wordmark span{font-family:'Archivo',sans-serif;font-weight:600;font-size:1.5rem;letter-spacing:-.03em;color:var(--blue);
-  line-height:1;text-transform:uppercase}
+.wordmark{margin-bottom:.9rem;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.wordmark img{width:100%;aspect-ratio:3/2;object-fit:contain;display:block}
 .client h4{font-family:'Archivo',sans-serif;font-weight:600;font-size:.92rem;margin:0 0 .2rem}
 .client span{font-family:'IBM Plex Mono',monospace;font-size:.64rem;color:var(--slate);display:block}
 .client-still{display:block;margin-top:.85rem;text-decoration:none}
@@ -427,7 +426,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
     </div>
     <div class="clients">
       <div class="client">
-        <div class="wordmark"><span>HC</span></div>
+        <div class="wordmark"><img src="assets/logo-hay.jpg" alt="Hay Clothing logo"></div>
         <h4>Hay Clothing</h4><span>@hayclothing</span>
         <span class="rp">Repeat client</span>
         <a class="client-still" href="https://www.instagram.com/reel/DauriHToOYt/" rel="noopener">
@@ -436,15 +435,15 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
         </a>
       </div>
       <div class="client">
-        <div class="wordmark"><span>AP</span></div>
+        <div class="wordmark"><img src="assets/logo-almarah.jpg" alt="Almarah by Pulimoottil logo"></div>
         <h4>Almarah by Pulimoottil</h4><span>@almarah_by_pulimoottil</span>
       </div>
       <div class="client">
-        <div class="wordmark"><span>IHA</span></div>
+        <div class="wordmark"><img src="assets/logo-iha.jpg" alt="IHA Designs logo"></div>
         <h4>IHA Designs</h4><span>@iha_designs</span>
       </div>
       <div class="client">
-        <div class="wordmark"><span>TB</span></div>
+        <div class="wordmark"><img src="assets/logo-twinbirds.jpg" alt="Twin Birds logo"></div>
         <h4>Twin Birds</h4><span>@twinbirdsofficial</span>
       </div>
     </div>
