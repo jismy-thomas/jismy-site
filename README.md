@@ -1,4 +1,4 @@
-# jismy.in - portfolio site
+# jismy.in — portfolio site
 
 Static single-page site. No build step, no dependencies. Edit `index.html` and push.
 
