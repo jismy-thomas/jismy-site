@@ -15,6 +15,7 @@ no dependencies. Edit `index.html`, commit, and the change is live within a minu
 | `CNAME` | Custom domain for GitHub Pages |
 | `robots.txt` | Crawl rules, points to the sitemap |
 | `sitemap.xml` | Sitemap submitted to Google Search Console |
+| `llms.txt` | Plain-text summary of the site for AI assistants and crawlers |
 
 Sections, in order: hero, headline stats, capabilities, three case studies,
 client campaigns, toolkit, experience timeline, contact.
@@ -42,9 +43,13 @@ Keep the same filename in `assets/` and nothing else needs changing. If adding a
 one, follow the existing pattern and always write a real `alt` description:
 
 ```html
-<img src="assets/example.jpg" alt="What the image actually shows"
+<img src="assets/example.webp" alt="What the image actually shows"
      style="width:100%;height:100%;object-fit:cover">
 ```
+
+Images on the page are WebP (about half the size of the equivalent JPG at the same
+visual quality). The one exception is `og-image.jpg`, the social-share preview, which
+stays JPG because some link-preview crawlers handle it more reliably.
 
 Export at roughly 2× display size and compress before committing. Page speed matters
 here, both for visitors and because a marketing portfolio ought to practise what it
@@ -73,7 +78,9 @@ need updating together, or they will disagree with each other:
 
 1. The stats band near the top
 2. The KPI block in the organic-growth case study
-3. `assets/insights.jpg`
+3. `assets/insights.webp`
+
+When a new brand campaign is added, also add the brand to the list in `llms.txt`.
 
 Update `lastmod` in `sitemap.xml` after any substantial change.
 

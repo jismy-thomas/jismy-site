@@ -13,6 +13,9 @@
 <meta property="og:description" content="SEO and WordPress builds, Google and Meta ad campaigns, organic social growth and analytics reporting. Based in Kottayam, Kerala.">
 <meta property="og:url" content="https://jismy.in/">
 <meta property="og:image" content="https://jismy.in/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jismy Thomas, digital marketer, Kottayam, Kerala">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://jismy.in/assets/og-image.jpg">
 <meta name="twitter:image:alt" content="Jismy Thomas, digital marketer, Kottayam, Kerala">
@@ -27,7 +30,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Karla:wght@400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTSVLQPJ3"></script>
@@ -42,8 +45,11 @@
 {
   "@context":"https://schema.org",
   "@type":"Person",
+  "@id":"https://jismy.in/#person",
   "name":"Jismy Thomas",
   "url":"https://jismy.in/",
+  "image":"https://jismy.in/assets/portrait.webp",
+  "description":"Digital marketer based in Kottayam, Kerala, working across SEO, WordPress and WooCommerce builds, Google and Meta ads, organic social growth and short-form video content.",
   "jobTitle":"Digital Marketer",
   "email":"mailto:jismythomas005@gmail.com",
   "telephone":"+91-8921788265",
@@ -59,13 +65,14 @@
 {
   "@context":"https://schema.org",
   "@type":"ProfessionalService",
+  "@id":"https://jismy.in/#service",
   "name":"Jismy Thomas | Digital Marketing",
   "url":"https://jismy.in/",
   "image":"https://jismy.in/assets/og-image.jpg",
   "description":"Freelance digital marketing: SEO, WordPress and WooCommerce builds, Google and Meta ad campaigns, organic social growth and analytics reporting.",
   "email":"jismythomas005@gmail.com",
   "telephone":"+91-8921788265",
-  "founder":{"@type":"Person","name":"Jismy Thomas"},
+  "founder":{"@id":"https://jismy.in/#person"},
   "areaServed":[
     {"@type":"State","name":"Kerala"},
     {"@type":"Country","name":"India"}
@@ -209,7 +216,8 @@ h2{font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(1.6rem,3vw,2
 .reel-c{display:block;font-family:'IBM Plex Mono',monospace;font-size:.66rem;color:var(--slate);line-height:1.45;margin-top:.15rem}
 
 /* --- clients --- */
-.clients{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:1.4rem}
+.clients{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:1.4rem}
+@media (max-width:1100px){.clients{grid-template-columns:repeat(3,1fr)}}
 .client{border:1px solid var(--line);background:#fff;border-radius:3px;padding:1.2rem;text-align:center}
 .wordmark{margin-bottom:.9rem;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:#fff}
 .wordmark img{width:100%;aspect-ratio:3/2;object-fit:contain;display:block}
@@ -342,7 +350,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
       <div class="stat"><div class="n">7.1M</div><span class="l">Organic reel views in 90 days</span></div>
       <div class="stat"><div class="n">3.8M</div><span class="l">Accounts reached in the same period</span></div>
       <div class="stat"><div class="n">98.8%</div><span class="l">Of views from non-followers</span></div>
-      <div class="stat"><div class="n">4</div><span class="l">Brand campaigns delivered end to end</span></div>
+      <div class="stat"><div class="n">5</div><span class="l">Brand campaigns delivered end to end</span></div>
     </div>
     <div class="bandnote">Instagram Insights, 90 days to 27 July 2026. Audience: 72.6% women, 54.8% aged 25 to 34, 81.3% India.</div>
   </div>
@@ -380,7 +388,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
     <article class="case">
       <div class="case-grid">
         <div>
-          <div class="shot"><img src="assets/mibyjismy.jpg" alt="MI BY JISMY storefront homepage, built in WordPress and WooCommerce" style="width:100%;height:100%;object-fit:cover;object-position:top" loading="lazy"></div>
+          <div class="shot"><img src="assets/mibyjismy.webp" alt="MI BY JISMY storefront homepage, built in WordPress and WooCommerce" style="width:100%;height:100%;object-fit:cover;object-position:top" loading="lazy"></div>
         </div>
         <div>
           <div class="case-tag">WordPress · WooCommerce · On-page SEO</div>
@@ -402,7 +410,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
     <article class="case">
       <div class="case-grid">
         <div>
-          <div class="shot"><img src="assets/ads-dashboard.jpg" alt="Google Ads overview showing 29 clicks and 1.75K impressions for the campaign" style="width:100%;height:100%;object-fit:cover;object-position:top left" loading="lazy"></div>
+          <div class="shot"><img src="assets/ads-dashboard.webp" alt="Google Ads overview showing 29 clicks and 1.75K impressions for the campaign" style="width:100%;height:100%;object-fit:cover;object-position:top left" loading="lazy"></div>
         </div>
         <div>
           <div class="case-tag">Google Ads · Meta Ads · Certification project</div>
@@ -428,7 +436,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
     <article class="case">
       <div class="case-grid">
         <div>
-          <div class="shot"><img src="assets/insights.jpg" alt="Instagram Insights export showing 7.1M reel views, 3.8M viewers and audience demographics over 90 days" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+          <div class="shot"><img src="assets/insights.webp" alt="Instagram Insights export showing 7.1M reel views, 3.8M viewers and audience demographics over 90 days" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
         </div>
         <div>
           <div class="case-tag">Organic social · Owned channel</div>
@@ -451,16 +459,16 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
           <p style="font-size:.9rem;color:var(--slate);margin:1.4rem 0 .2rem">My top performing reels:</p>
           <div class="reelstrip">
             <a class="reel" href="https://www.instagram.com/reel/DUS7u7YiFbd/" rel="noopener noreferrer" target="_blank">
-              <div class="reel-frame"><img src="assets/reel-19-8m.jpg" alt="Reel that reached 19.8 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
-              <div class="reel-n">19.8M</div><span class="reel-c">510,000 likes</span>
+              <div class="reel-frame"><img src="assets/reel-19-8m.webp" alt="Reel that reached 20.1 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
+              <div class="reel-n">20.1M</div><span class="reel-c">508,000 likes</span>
             </a>
             <a class="reel" href="https://www.instagram.com/reel/DUanLguCGyv/" rel="noopener noreferrer" target="_blank">
-              <div class="reel-frame"><img src="assets/reel-6-7m.jpg" alt="Reel that reached 6.7 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
-              <div class="reel-n">6.7M</div><span class="reel-c">142,000 likes</span>
+              <div class="reel-frame"><img src="assets/reel-6-7m.webp" alt="Reel that reached 6.7 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
+              <div class="reel-n">6.7M</div><span class="reel-c">141,000 likes</span>
             </a>
             <a class="reel" href="https://www.instagram.com/reel/DWORPeTiMsa/" rel="noopener noreferrer" target="_blank">
-              <div class="reel-frame"><img src="assets/reel-2-4m.jpg" alt="Reel that reached 2.4 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
-              <div class="reel-n">2.4M</div><span class="reel-c">56,100 likes</span>
+              <div class="reel-frame"><img src="assets/reel-2-4m.webp" alt="Reel that reached 2.5 million views" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span class="play"></span></div>
+              <div class="reel-n">2.5M</div><span class="reel-c">56,800 likes</span>
             </a>
           </div>
         </div>
@@ -479,12 +487,21 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
     </div>
     <div class="clients">
       <div class="client">
+        <div class="wordmark"><img src="assets/logo-libas.webp" alt="Libas logo" loading="lazy"></div>
+        <h4>Libas</h4>
+        <div class="handle-line"><span>@libasindia</span></div>
+        <a class="client-still" href="https://www.instagram.com/reel/DcDr7Ghx3gf/" rel="noopener noreferrer" target="_blank">
+          <img src="assets/collab-libas.webp" alt="Still from the Libas Onam campaign reel: Jismy in a red embroidered kurta" loading="lazy">
+          <span class="still-cap">Campaign reel &middot; 13.9K views</span>
+        </a>
+      </div>
+      <div class="client">
         <div class="wordmark"><img src="assets/logo-hay.svg" alt="Hay Clothing logo" loading="lazy"></div>
         <h4>Hay Clothing</h4>
         <div class="handle-line"><span>@hayclothing</span><span class="rp">Repeat client</span></div>
         <a class="client-still" href="https://www.instagram.com/reel/DauriHToOYt/" rel="noopener noreferrer" target="_blank">
-          <img src="assets/collab-hay.jpg" alt="Still from the Hay Clothing campaign reel" loading="lazy">
-          <span class="still-cap">Campaign reel &middot; 19.6K views</span>
+          <img src="assets/collab-hay.webp" alt="Still from the Hay Clothing campaign reel" loading="lazy">
+          <span class="still-cap">Campaign reel &middot; 26.7K views</span>
         </a>
       </div>
       <div class="client">
@@ -492,8 +509,8 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
         <h4>Almarah by Pulimoottil</h4>
         <div class="handle-line"><span>@almarah_by_pulimoottil</span></div>
         <a class="client-still" href="https://www.instagram.com/reel/DYMfRB5IxCa/" rel="noopener noreferrer" target="_blank">
-          <img src="assets/collab-almarah.jpg" alt="Still from the Almarah by Pulimoottil campaign reel" loading="lazy">
-          <span class="still-cap">Campaign reel &middot; 53.2K views</span>
+          <img src="assets/collab-almarah.webp" alt="Still from the Almarah by Pulimoottil campaign reel" loading="lazy">
+          <span class="still-cap">Campaign reel &middot; 59.2K views</span>
         </a>
       </div>
       <div class="client">
@@ -501,18 +518,22 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
         <h4>IHA Designs</h4>
         <div class="handle-line"><span>@iha_designs</span></div>
         <a class="client-still" href="https://www.instagram.com/reel/DZXTUd1BX4N/" rel="noopener noreferrer" target="_blank">
-          <img src="assets/collab-iha.jpg" alt="Still from the IHA Designs campaign reel" loading="lazy">
-          <span class="still-cap">Campaign reel &middot; 22.4K views</span>
+          <img src="assets/collab-iha.webp" alt="Still from the IHA Designs campaign reel" loading="lazy">
+          <span class="still-cap">Campaign reel &middot; 27.6K views</span>
         </a>
       </div>
       <div class="client">
         <div class="wordmark"><img src="assets/logo-twinbirds.svg" alt="Twin Birds logo" loading="lazy"></div>
         <h4>Twin Birds</h4>
         <div class="handle-line"><span>@twinbirdsofficial</span></div>
+        <a class="client-still" href="https://www.instagram.com/reel/Db79BX1hpha/" rel="noopener noreferrer" target="_blank">
+          <img src="assets/collab-twinbirds.webp" alt="Still from the Twin Birds campaign reel: close-up of the leggings' ankle fit and brand label" loading="lazy">
+          <span class="still-cap">Campaign reel &middot; 54.8K views</span>
+        </a>
       </div>
     </div>
     <p style="font-size:.8rem;line-height:1.5;color:var(--slate);margin-top:1.4rem;max-width:52rem;font-family:'IBM Plex Mono',monospace">
-      Campaign view counts as of July 2026.</p>
+      Campaign view counts as of November 2026.</p>
   </div>
 </section>
 
@@ -585,7 +606,7 @@ footer{padding:1.9rem 0;font-family:'IBM Plex Mono',monospace;font-size:.7rem;le
 <section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-photo">
-      <img src="assets/portrait.jpg" alt="Jismy Thomas, digital marketer based in Kottayam, Kerala" loading="lazy">
+      <img src="assets/portrait.webp" alt="Jismy Thomas, digital marketer based in Kottayam, Kerala" loading="lazy">
     </div>
     <div>
     <div class="sec-label">Contact</div>
